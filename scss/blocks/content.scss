@@ -1,0 +1,10 @@
+.content{
+  margin-bottom: 50px;
+  margin-top:50px;
+}
+@media (max-width: 790px) {
+ .content{
+   margin-bottom: 25px;
+   margin-top:25px;
+ }
+}

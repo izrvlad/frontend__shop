@@ -1,0 +1,40 @@
+.categories{
+  margin: 40px 0;
+
+  ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li{
+      margin:10px 25px;
+      a{
+        font-size: 19px;
+        line-height: 15px;
+        letter-spacing: 1.9px;
+        text-decoration: none;
+        color:$gray;
+        font-weight: 600;
+
+        &:hover{
+          border-bottom: 1px solid $gray;
+
+        }
+      }
+    }
+  }
+}
+@media (max-width: 790px){
+  .categories{
+    ul{
+      li{
+        margin: 10px 15px;
+        a{
+          font-size: 16px;
+          line-height: 12px;
+          letter-spacing: 1.3px;
+
+        }
+      }
+    }
+  }
+}

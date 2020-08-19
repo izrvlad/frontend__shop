@@ -1,0 +1,21 @@
+.menu{
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a{
+      font-size: 12px;
+      color: $black;
+      letter-spacing: 0.96px;
+      line-height: 12px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: 0 3px;
+
+      &:hover{
+        text-decoration: underline $black;
+      }
+    }
+  }
+
+}

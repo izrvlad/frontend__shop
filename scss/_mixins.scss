@@ -1,0 +1,27 @@
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@mixin btn($bg:$black,$fs:9px,$lh:13px,$ls:0.54,$br:40px,$clr:$white,$w:120px){
+  background-color: $bg;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  border-radius: $br;
+  color: $clr;
+  width: $w;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin: 25px 0;
+  padding: 15px 0;
+  @content;
+
+  &:hover{
+    background-color: lighten($bg,25%);
+  }
+
+}
